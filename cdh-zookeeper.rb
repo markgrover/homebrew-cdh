@@ -3,7 +3,7 @@ require 'formula'
 # Documentation: http://archive.cloudera.com/cdh4/cdh/4/zookeeper-3.4.5-cdh4.2.0/
 
 class CdhZookeeper < Formula
-  homepage ''
+  homepage 'http://archive.cloudera.com/cdh4/cdh/4/zookeeper-3.4.5-cdh4.2.0/'
   url 'http://archive.cloudera.com/cdh4/cdh/4/zookeeper-3.4.5-cdh4.2.0.tar.gz'
   sha1 '76a7d23501a84be687d0b50fd9f35706b860ef55'
   version '3.4.5-cdh4.2.0'
@@ -22,12 +22,8 @@ class CdhZookeeper < Formula
   #depends_on 'shadow-utils'
   #depends_on 'bigtop-utils'
 
-  #depends_on :x11 # if your formula requires any X11/XQuartz components
-
   def install
-    # ENV.j1  # if your formula's build system can't parallelize
     system "cp #{PACKAGING_SRC}/* ."
-    #prefix.install Dir['~/cdhpkg/common/zookeeper/*']
     system "ls -lrt"
     ENV['FULL_VERSION']="#{version}"
     system "bash", "do-component-build"
