@@ -22,7 +22,6 @@ sudo ln -s /usr/local/Cellar/gnu-getopt/1.*/bin/getopt /usr/bin/getopt
 Procedure
 ========
 <pre>
-git clone git://github.mtv.cloudera.com/mgrover/homebrew-cdh.git
-cp homebrew-cdh/*.rb /usr/local/Library/Formula/
+brew tap markgrover/homebrew-cdh
 brew install cdh-zookeeper
 </pre>
