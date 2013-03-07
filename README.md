@@ -13,13 +13,13 @@ Pre-requisites
 ==============
 
 There are a few incompatibilities between Macs and Linux that you would need to get around before you get started with installing these packages.
-1. You are expected to have home brew installed on your mac. Home brew is a package management system for Mac. To install, homebrew, please visit http://mxcl.github.com/homebrew/, go the bottom of the page to get the command to install.
-2. You are expected to have git installed
+- You are expected to have home brew installed on your mac. Home brew is a package management system for Mac. To install, homebrew, please visit http://mxcl.github.com/homebrew/, go the bottom of the page to get the command to install.
+- You are expected to have git installed
 <pre>
 brew install git
 </pre>
-3. You need XCode installed on your Mac for tools required to build certain code when packages are installed.
-4. Macs by default come with a BSD version of getopt. Bigtop code assumes that you have GNU's getopt installed. Consequently, before you install these brew recipes, you will need to download and install gnu getopt
+- You need XCode installed on your Mac for tools required to build certain code when packages are installed.
+- Macs by default come with a BSD version of getopt. Bigtop code assumes that you have GNU's getopt installed. Consequently, before you install these brew recipes, you will need to download and install gnu getopt
 <pre>
 brew install gnu-getopt
 sudo mv /usr/bin/getopt /usr/bin/getopt-bsd
